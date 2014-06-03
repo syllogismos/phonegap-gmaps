@@ -26,7 +26,7 @@ var app = {
     // Bind any events that are required on startup. Common events are:
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
-        document.addEventListener('deviceready', this.onDeviceReady, false);
+        document.addEventListener('deviceready', this.initializeMap, false);
     },
     // deviceready Event Handler
     //
@@ -45,5 +45,14 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
+    }
+    // Initialize google maps
+    initializeMap: function() {
+	var mapOptions = {
+            center: new google.maps.LatLng(43.069452, -89.411373),
+	    zoom: 11,
+	    mapTypeId: google.maps.MapTypeId.ROADMAP
+	};
+	var map = new google.maps.Map(document.getElementById("map"), mapOptions);
     }
 };
