@@ -45,7 +45,7 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
-    }
+    },
     // Initialize google maps
     initializeMap: function() {
 	var mapOptions = {
