@@ -6,14 +6,14 @@
         id        = "com.phonegap.helloworld"
         version   = "1.0.0">
 
-    <name>HelloWorld</name>
+    <name>Anil</name>
 
     <description>
-        Hello World sample application that responds to the deviceready event.
+        Sample google maps application
     </description>
 
-    <author href="http://phonegap.com" email="support@phonegap.com">
-        PhoneGap Team
+    <author href="http://phonegap.com" email="anilkaraka@outlook.com">
+        Anil Karaka
     </author>
 
     <!--
